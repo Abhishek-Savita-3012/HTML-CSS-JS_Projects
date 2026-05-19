@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+            border: 1px solid gray;
+            padding: 15px;
+        }
+        th{
+            padding: 15px;
+        }
+    </style>
+    <script>
+        function displayData(){
+            var table=document.querySelector("table");
+            table.innerHTML=`
+                <tr>
+                    <th>BOOK NAME</th>
+                    <th>PRICE</th>
+                    <th>QUANTITY</th>
+                    <th>AMOUNT</th>
+                </tr>
+                `
+            let totalAmt=0;
+            var arr = JSON.parse(localStorage.getItem("Cart")); // Parse the string to an array
+
+    if (arr && arr.length > 0) {
+        arr.forEach(book => {
+            HTML = `
+                <tr>
+                    <td>${book.name}</td>
+                    <td>${book.price}</td>
+                    <td>${book.quantity}</td>
+                    <td>${book.amount}</td>
+                </tr>
+            `;
+            table.innerHTML += HTML;
+            totalAmt += book.price;
+        });
+        document.body.innerHTML += "<p>Total Amount - " + totalAmt + "</p>";
+    } else {
+        document.body.innerHTML += "<h2>CART EMPTY</h2>";
+    }}
+    </script>
+</head>
+<body onload="displayData()">
+    <table>
+    </table>
+    <br><br>
+</body>
+</html>

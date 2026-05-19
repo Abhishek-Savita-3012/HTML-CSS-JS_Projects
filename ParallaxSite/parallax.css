@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.parallaxone{
+    width:100%;
+    height:635px;
+    background-image: url(wp6303668-marvel-4k-wallpapers.jpg);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+.parallaxone h2{
+    position: relative;
+    left:10px;
+    top:10px;
+    width:180px;
+    height:50px;
+    padding:10px;
+    text-align: center;
+    background-color:rgb(255, 0, 0);
+    color:white;
+    font-size:40px;
+    font-weight: 600px;
+    font-family: Marvel;
+}
+.paragraph{
+    height:140px;
+    padding:10px;
+    text-align: center;
+    background-color:#CADCFC;
+    color:#00246B;
+    font-size:19px;
+
+}
+.parallaxtwo{
+    width:100%;
+    height:635px;
+    background-image: url(wp8189749-marvel-4k-desktop-wallpapers.jpg);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+.parallaxtwo h2{
+    position: relative;
+    left:10px;
+    top:10px;
+    width:200px;
+    height:53px;
+    padding:10px;
+    text-align: center;
+    background-color:#8AB6F9;
+    color:#CADCFC;
+    font-size:40px;
+    font-weight: 600px;
+    font-family: Marvel;
+}
+.parallaxthree{
+    width:100%;
+    height:635px;
+    background-image: url(wp11334137-captain-america-4k-pc-wallpapers.jpg);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+.parallaxthree h2{
+    position: relative;
+    left:10px;
+    top:10px;
+    width:320px;
+    height:53px;
+    padding:10px;
+    text-align: center;
+    background-color:#8AB6F9;
+    color:#CADCFC;
+    font-size:40px;
+    font-weight: 600px;
+    font-family: Marvel;
+}
+.parallaxfour{
+    width:100%;
+    height:635px;
+    background-image: url(spiderman.jpg);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+.parallaxfour h2{
+    position: relative;
+    left:10px;
+    top:10px;
+    width:200px;
+    height:53px;
+    padding:10px;
+    text-align: center;
+    background-color:#8AB6F9;
+    color:#CADCFC;
+    font-size:40px;
+    font-weight: 600px;
+    font-family: Marvel;
+}
+.end{
+    margin-top: 10px;
+    height:50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    background-color: #00246B;
+    color:#CADCFC;
+    font-family: Marvel;
+}
+.head{
+    height:50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size:30px;
+    font-weight: 600;
+    background-color: #CADCFC;
+    color:#00246B;
+    font-family: Marvel;
+}

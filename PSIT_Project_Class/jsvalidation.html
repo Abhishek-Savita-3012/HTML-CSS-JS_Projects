@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script language="javascript">
+        function validate() {
+            var a = document.form1.p1.value;
+            var e = document.form1.uname.value;
+            var s = new String(e);
+
+            if (s.length == 0 || s.charAt(0) == ' ') {
+                alert("ERROR: User Name Is Blank Please Fill It");
+                document.form1.uname.focus();
+            } else if (a.length == 0 || a.charAt(0) == ' ') {
+                alert("ERROR: Password is Blank Please Fill It");
+                document.form1.p1.focus();
+            } else if (a.length < 8 || a.charAt(0) == ' ') {
+                alert("ERROR: Password is less than 8 characters");
+                document.form1.p1.focus();
+            } else if (form1.gender[0].checked == true) {
+                alert("Male is clicked");
+            } else if (form1.gender[1].checked == true) {
+                alert("Female is clicked");
+            } else if ((form1.gender[0].checked == false) && (form1.gender[1].checked == false)) {
+                alert("Please specify gender");
+            }
+        }
+    </script>
+    <style>
+        td.b {
+            background-color: yellow;
+            color: blue;
+            font-weight: 700;
+            font-size: 15pt;
+        }
+        td.a {
+            background-color: red;
+            color: "#ffffff";
+            font-weight: 700;
+            font-size: 15pt;
+        }
+    </style>
+</head>
+<body bgcolor="#aaaaaa">
+    <form name="form1">
+        <table border="0" width="100%">
+            <tr>
+                <td class="a" align="center" colspan="6">E_MAIL FORM
+            </tr>
+            <tr>
+                <td>
+            </tr>
+            <tr>
+                <td>
+            </tr>
+            <tr>
+                <td class="b" colspan="6">NEW USER ENTER YOUR DATA HERE.
+                <tr>
+                    <td>
+                        <font color="red"><b>USER NAME:</b>
+                    <td>
+                        <input type="text" name="uname" style="background: 'pink'; color: 'blue'" onfocus="document.form1.uname.style.background='#CCFFFF'; this.value=''" onblur="document.form1.uname.style.background='pink'">
+                    <tr>
+                        <td>
+                            <b>
+                                <font color="red"> USER PASSWORD:</font>
+                            </b>
+                            <td>
+                                <input type="password" name="p1" value="AZIZ" style="background: 'pink'; color: 'blue'" onfocus="document.form1.p1.style.background='#000000'; this.value=''" onblur="document.form1.p1.style.background='pink'">
+                                <input type="button" value="SUBMIT" name="b1" onclick="validate()" style="background: 'pink'; color: 'blue'">
+                                <td align="left" colspan="2">
+                                    <input type="radio" name="gender" value="male"><br>
+                                    <input type="radio" name="gender" value="female">
+                                    <input type="reset" name="b2" value="Clear Fields" style="background: 'pink'; color: 'blue'">
+                                </font>
+                            </td>
+                        </table>
+                    </form>
+                </body>
+            </html>

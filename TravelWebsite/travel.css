@@ -1,0 +1,621 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+ul li {
+    list-style: none;
+    display: inline;
+}
+
+.container {
+    height: 800px;
+    width: 100%;
+    background-image: url(bgtravel.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+.container .head {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    height: 150px;
+}
+
+.container .head .headtop {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid white;
+}
+
+.container .head .headbottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 80%;
+    padding-top: 20px;
+}
+
+.container .head .headbottom ul li {
+    margin-right: 20px;
+}
+
+.container .head .headbottom button {
+    height: 36px;
+    width: 120px;
+    background-color: #3B79C9;
+    border: 1px solid #3B79C9;
+    border-radius: 40px;
+    color: white;
+}
+
+.container .head .headbottom button:hover {
+    background-color: #285c9f;
+    border: 1px solid #285c9f;
+    cursor: pointer;
+}
+
+.container .head .headbottom .middle ul li:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.container .hero {
+    height: 650px;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    flex-direction: column;
+}
+
+.container span {
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.container span1 {
+    font-size: 70px;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.container .hero button {
+    height: 51px;
+    width: 158px;
+    background-color: #3B79C9;
+    border: 1px solid #3B79C9;
+    border-radius: 40px;
+    margin-right: 30px;
+    color: white;
+}
+
+.herocontent {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container .hero button1 {
+    height: 51px;
+    width: 152px;
+    border: 2px solid white;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .hero button:hover {
+    background-color: #285c9f;
+    border: 1px solid #285c9f;
+    cursor: pointer;
+}
+
+.container .hero button1:hover {
+    background-color: rgb(255, 255, 255, 0.2);
+    cursor: pointer;
+}
+
+.container .hero .btn {
+    display: flex;
+    flex-direction: row;
+}
+
+.container .head .headtop .left {
+    display: flex;
+}
+
+.container .head .headtop .left i {
+    height: 30px;
+    width: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #3B79C9;
+    border-radius: 50%;
+    background-color: #3B79C9;
+}
+
+.headtop .right {
+    font-size: 25px;
+}
+
+.headbottom .left ul {
+    display: flex;
+    flex-direction: row;
+}
+
+.headbottom .left ul li:hover {
+    cursor: pointer;
+}
+
+.headbottom .left ul li {
+    height: 30px;
+    width: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+.inquiry .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 240px;
+    width: 100%;
+    background-color: #3B79C9;
+    color: white;
+}
+
+.inquiry .row .col {
+    margin: 20px;
+}
+
+input[type="text"],
+[type="number"],
+[type="date"] {
+    height: 57px;
+    width: 186px;
+    margin-top: 20px;
+    padding-left: 20px;
+    border-radius: 40px;
+    border: 2px solid white;
+    color: grey;
+    padding-right: 20px;
+}
+
+.inquiry button2 {
+    height: 57px;
+    width: 186px;
+    border: 2px solid white;
+    display: flex;
+    border-radius: 40px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 17px;
+}
+.inquiry button2:hover{
+    background-color: rgb(255, 255, 255, 0.2);
+    cursor: pointer;
+}
+
+.popular {
+    height: 1100px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: grey;
+    margin-bottom: 60px;
+}
+
+.content {
+    text-align: center;
+}
+
+.cardsection {
+    display: flex;
+    flex-direction: row;
+}
+
+.card {
+    width: 370px;
+    height: 500px;
+    margin-right: 40px;
+    margin-top: 50px;
+}
+
+.card#card1 {
+    background-image: url(popular-1.jpg);
+    border-radius: 40px;
+}
+
+.card#card2 {
+    background-image: url(popular-2.jpg);
+    border-radius: 40px;
+}
+
+.card#card3 {
+    background-image: url(popular-3.jpg);
+    border-radius: 40px;
+}
+
+.cardbox {
+    height: 144px;
+    width: 310px;
+    margin: 20px;
+    background-color: white;
+    border-radius: 40px;
+    position: relative;
+    top: 315px;
+    padding-left: 20px;
+    color: grey;
+}
+
+.popular span {
+    color: #285c9f;
+}
+
+.popular span1 {
+    color: black;
+    font-size: 45px;
+    font-weight: 800;
+}
+
+.popular button {
+    margin-top: 50px;
+    width: 200px;
+    height: 50px;
+    background-color: #3B79C9;
+    border: 1px solid #3B79C9;
+    border-radius: 40px;
+    color: white;
+}
+
+.popular button:hover {
+    background-color: #285c9f;
+    border: 1px solid #285c9f;
+    cursor: pointer;
+}
+
+.star {
+    position: relative;
+    left: 180px;
+    bottom: 10px;
+    height: 24px;
+    width: 94px;
+    background-color: #3B79C9;
+    border: 1px solid #3B79C9;
+    border-radius: 40px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+}
+
+.cardbox span {
+    color: #285c9f;
+    margin-bottom: 20px;
+}
+
+.cardbox span1 {
+    color: black;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.packages {
+    height: 1100px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: grey;
+    margin-bottom: 80px;
+}
+
+.packages .details {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.tabs {
+    width: 994px;
+    height: 272px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.tabs .left {
+    height: 272px;
+    width: 300px;
+}
+
+.tabs .left#tab1 {
+    background-image: url(packege-1.jpg);
+    border-radius: 20px 0px 0px 20px;
+}
+
+.tabs .left#tab2 {
+    background-image: url(packege-2.jpg);
+    border-radius: 20px 0px 0px 20px;
+}
+
+.tabs .left#tab3 {
+    background-image: url(packege-3.jpg);
+    border-radius: 20px 0px 0px 20px;
+}
+
+.packages span {
+    color: #285c9f;
+}
+
+.packages span1 {
+    color: black;
+    font-size: 45px;
+    font-weight: 800;
+}
+
+.tabs .right {
+    height: 272px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: #3B79C9;
+    border-radius: 0px 20px 20px 0px;
+}
+.tabs .right .top{
+    font-size: 15px;
+}
+.tabs .right .top i{
+    font-size: 15px;
+}
+.tabs .right .beech{
+    text-align: center;
+}
+.tabs .right .beech span3{
+    font-size: 30px;
+    font-weight: 800;
+}
+.tabs .middle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: grey;
+}
+
+.tabs .middle span2 {
+    color: black;
+    font-size: 25px;
+}
+
+.tabs .middle .days {
+    height: 36px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 40px;
+}
+
+.tabs .middle .days i {
+    color: #3B79C9;
+}
+.tabs .right .neeche button{
+    height:51px;
+    width:151px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid white;
+    border-radius: 40px;
+    background-color: #3B79C9;
+    color:white;
+}
+.tabs .right .neeche button:hover{
+    background-color: rgb(255, 255, 255, 0.2);
+    cursor: pointer;
+}
+.photo{
+    height: 1000px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: grey;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.photo span {
+    color: #285c9f;
+}
+
+.photo span1 {
+    color: black;
+    font-size: 45px;
+    font-weight: 800;
+}
+.gallery{
+    display: flex;
+    flex-direction: row;
+    height:700px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.gallery .col{
+    margin-left: 20px;
+}
+.gallery .col#col1 #row1{
+    height:318px;
+    width:400px;
+    background-image: url(gallery-1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 20px;
+    border-radius: 20px;
+}
+.gallery .col#col1 #row2{
+    height:318px;
+    width:400px;
+    background-image: url(gallery-2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+}
+.gallery .col#col2{
+    height:655px;
+    width:350px;
+    background-image: url(gallery-3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+}
+.gallery .col#col3 #row3{
+    height:318px;
+    width:400px;
+    background-image: url(gallery-4.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 20px;
+    border-radius: 20px;
+}
+.gallery .col#col3 #row4{
+    height:318px;
+    width:400px;
+    background-image: url(gallery-5.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+}
+.action{
+    height:350px;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #3B79C9;
+    color:white;
+}
+.action .col{
+    padding-right: 150px;
+    padding-left: 140px;
+}
+.action .col span{
+   font-size: 20px;
+}
+.action .col span1{
+    font-size: 50px;
+    font-weight: 800;
+}
+.action .col button{
+    width:173px;
+    height:51px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid white;
+    border-radius: 40px;
+    background-color: #3B79C9;
+    color:white;
+}
+.action .col button:hover{
+    background-color: rgb(255, 255, 255, 0.2);
+    cursor: pointer;
+}
+.contact{
+    height:360px;
+    width: 100%;
+    background-color: #223544;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color:white;
+}
+.contact span{
+    font-size: 30px;
+    font-weight: 800;
+    color:white;
+}
+.contact input[type="email"]{
+    height:53px;
+    width:273px;
+    padding-left: 20px;
+    color:grey;
+    border-radius: 40px;
+    border:2px solid white;
+}
+.contact button{
+    height:53px;
+    width:293px;
+    color:grey;
+    border-radius: 40px;
+    border:2px solid white;
+    color:white;
+    background-color:#223544;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact button:hover{
+    background-color: rgb(255, 255, 255, 0.2);
+    cursor: pointer;
+}
+.contact span1{
+    padding-bottom: 5px;
+    border-bottom: 3px solid #3B79C9;
+}
+.ending{
+    background-color: #1C2E3B;
+    height:63px;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:white;
+}
+.ending .col{
+    padding-left: 200px;
+    padding-right: 200px;
+}
+.headtop .middle{
+    position: relative;
+    right:70px;
+}
+.headbottom .middle{
+    position: relative;
+    top:10px;
+}

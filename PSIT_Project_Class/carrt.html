@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Online Shopping</title>
+    <script>
+        var arr = [];
+
+        function addtocart1() {
+            var x = document.getElementById('price1').innerText;
+            var q = document.form1.qty1.value;
+            var a = x * q;
+
+            let data = { "price": x, "qty": q, "amt": a }
+            arr.push(data);
+        }
+
+        function addtocart2() {
+            var x = document.getElementById('price2').innerText;
+            var q = document.form1.qty2.value;
+            var a = x * q;
+
+            let data = { "price": x, "qty": q, "amt": a }
+            arr.push(data);
+        }
+
+        function cart() {
+            var st = "";
+            var pp = document.getElementById('desc');
+            var ptot = document.getElementById('tot');
+
+            for (let i = 0; i < arr.length; i++)
+                st = st + arr[i].price.toString() + "------------" + arr[i].qty.toString() + "------------" + arr[i].amt.toString() + "\n"
+
+            pp.innerText = st;
+            var t = 0;
+
+            for (let i = 0; i < arr.length; i++)
+                t = t + parseInt(arr[i].amt);
+
+            ptot.innerText = "Total " + t;
+        }
+    </script>
+</head>
+<body>
+    <table border="1">
+        <form name="form1">
+            <tr>
+                <td> Quantity:</td>
+                <td>
+                    <input type="number" id="qty1" min="0" max="100" step="1" value="0" />
+                    <span>Price</span><span id="price1" value="200">200</span><span> Rs.</span>
+                </td>
+                <td>
+                    <input type="button" onclick="addtocart1()" value="Add to Cart" />
+                </td>
+            </tr>
+            <tr>
+                <td>Quantity:</td>
+                <td>
+                    <input type="number" id="qty2" min="0" max="100" step="1" value="0" />
+                    <span>Price</span><span id="price2" value="100">100</span><span> Rs.</span>
+                </td>
+                <td>
+                    <input type="button" onclick="addtocart2()" value="Add to Cart" />
+                </td>
+            </tr>
+        </form>
+    </table>
+    <pre>Price      Qty       Amount
+    </pre>
+    <p id="desc"></p>
+    <p id="tot"></p>
+    <input type="button" onclick="cart()" value="Go to Cart" />
+</body>
+</html>

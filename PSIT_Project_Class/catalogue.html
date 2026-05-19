@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+    <title> Catalogue </title>
+    <style> 
+        body{ 
+            background-color: white;
+        }
+        button{
+            padding: 3px;
+        }
+        .btn-img{
+            width: 15px;
+            height: 15px;
+        }
+        .qt{
+            width: 35px;
+            height: 21px;
+        }
+        td{
+            padding-left: 20px;
+        }
+    </style> 
+    <script>
+        var cart = JSON.parse(localStorage.getItem("Cart"));
+        if(cart==null){
+            cart=[];
+        }
+        else
+        //var cart=[];
+        function addToCart(bookId) {
+        let bookRow = document.getElementById(bookId);
+        
+        //BOOK NAME
+        let bookDetails = bookRow.getElementsByTagName('td')[1].innerText.trim();
+        let bookName = bookDetails.split('<br>')[0].split(':')[1].trim(); //HTML,CSS,JAVASCRIPT
+        
+        //PRICE
+        let priceDetails = bookRow.getElementsByTagName('td')[2].innerText.trim(); //$40.5
+        let bookPrice = parseFloat(priceDetails.split('$')[1].trim());
+
+        //QUNATITY
+        let inputElement = bookRow.querySelector('input[type="number"]');
+        let bookQuantity = parseInt(inputElement.value);
+        //updating
+        let flag=0;
+        cart.forEach(books => {
+            if(books.name==bookName){
+                books.quantity+=bookQuantity;
+                books.amount=books.quantity*books.price;
+                flag=1;
+            }
+        });
+        if(flag==0){
+        let book = {
+            name: bookName,
+            price: bookPrice,
+            quantity: bookQuantity,
+            amount: (bookQuantity*bookPrice)
+        };
+        cart.push(book);
+        }
+        //console.log(cart);
+        localStorage.setItem("Cart",JSON.stringify(cart));
+    }
+    </script>
+    </head> 
+    <body > 
+    <!-- <form> -->
+        <table border="1" width="100%"> 
+            <tr id="book1"> 
+                <td> <img src="images.jpeg" width=100 height=100 /> </td> 
+                <td> Book:HTML,CSS,JAVASCRIPT 
+                    <br> :Author: Winston 
+                    <br> :Publication:Wiely   
+                </td>
+                <td> $40.5&nbsp;&nbsp;&nbsp;</td>
+                <td>
+                    <input type="number" min="1" max="100" step="1" value="1" class="qt" />
+                    <button onclick="
+                    addToCart('book1')"><img src="cart_ico.png" alt="cart" class="btn-img" >&nbsp;&nbsp; Add to Cart</button>
+                </td> 
+            </tr> 
+            <tr id="book2"> 
+                <td> <img src="C.jpg" width=100 height=100 /></td> 
+                <td> Book:The C Programming Language 
+                <br> :Author:Brain W Kernighan  <br> 
+                :Publication:Orient Publication</td>
+                <td> $63&nbsp;&nbsp;&nbsp; </td> 
+                <td>
+                    <input type="number" min="1" max="100" step="1" value="1" class="qt" />
+                    <button onclick="addToCart('book2')"><img src="cart_ico.png" alt="cart" class="btn-img">&nbsp;&nbsp;Add to Cart</button></td> 
+            </tr> 
+            <tr id="book3"> 
+                <td> <img src="JAVA.jpg" width=100 height=100 /></td> 
+                <td> Book:Java 2<br>
+                     :Author:Watson <br> 
+                     :Publication:BPBpublication</td>
+                <td> $35.5 &nbsp;&nbsp;&nbsp; </td> 
+                <td>
+                    <input type="number" min="1" max="100" step="1" value="1" class="qt" />
+                    <button onclick="addToCart('book3')"><img src="cart_ico.png" alt="cart" class="btn-img">&nbsp;&nbsp;Add to Cart</button></td> 
+            </tr> 
+            <tr id="book4"> 
+                <td> <img src="c++.webp" width=100 height=100 /></td> 
+                <td> Book:C++ - 2 books in 1<br> 
+                    :Author:Mark Reed <br>
+                    :Publication:Independently  publication</td>
+                <td> $50&nbsp;&nbsp;&nbsp; </td> 
+                <td>
+                    <input type="number" id="qty1" min="1" max="100" step="1" value="1" class="qt" />
+                    <button onclick="addToCart('book4')"><img src="cart_ico.png" alt="cart" class="btn-img">&nbsp;&nbsp;Add to Cart</button> </td> 
+            </tr> 
+        </table> 
+    <!-- </form>  -->
+</body> 
+</html>

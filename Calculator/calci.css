@@ -1,0 +1,87 @@
+.container{
+    /* border:2px solid; */
+    height:90vh;
+    width:30vw;
+    display: flex;
+    flex-direction: row;
+    background-color: #5680E9;
+    border-radius: 20px;
+}
+.screen{
+    /* border:2px solid black; */
+    height:15vh;
+    width:26vw;
+    margin:30px;
+    position:absolute;
+    top:45px;
+}
+.buttoning{
+    /* border:2px solid black; */
+    height:52vh;
+    width:26vw;
+    margin:30px;
+    position: absolute;
+    top:200px;
+    display: flex;
+    flex-direction: row;
+    background-color: #C1C8E4;
+    border-radius: 20px;
+}
+.column{
+    display:flex;
+    flex-direction: column;
+    margin:6px;
+}
+.tab{
+    /* border:2px solid black; */
+    height:70px;
+    width:67px;
+    margin:10px;
+}
+.tab1{
+    /* border:2px solid black; */
+    height:70px;
+    width:67px;
+    margin:10px;
+}
+.screen input{
+    height:98px;
+    width:390px;
+    background-color: #C1C8E4;
+    border-radius: 10px;
+    font-size:60px;
+    text-align: right;
+}
+.tab2{
+    /* border:2px solid black; */
+    height:70px;
+    width:67px;
+    margin:10px;
+}
+.column .tab input{
+    height:65px;
+    width:67px;
+    background-color: #84CEEB;
+    font-size: 20px;
+    border-radius: 10px;
+}
+.column .tab1 input{
+    height:65px;
+    width:67px;
+    background-color:chocolate;
+    font-size: 20px;
+    border-radius: 10px;
+}
+.column .tab2 input{
+    height:65px;
+    width:67px;
+    background-color: #8860D0;
+    font-size: 20px;
+    border-radius: 10px;
+}
+.column .tab1 input:hover{
+    background-color: red;
+}
+.column .tab2 input:hover{
+    background-color:greenyellow;
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="weather.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="search">
+                <input type="text" placeholder="Enter City name" spellcheck="false">
+                <button><img src="search.png"></button>
+            </div>
+            <div class="error">
+                <p>Invalid City Name</p>
+            </div>
+            <div class="weather">
+                <img src="rain.png" class="weather-icon">
+                <h1 class="temp">22°c</h1>
+                <h2 class="city">New York</h2>
+                <div class="details">
+                    <div class="col">
+                        <img src="humidity.png">
+                        <div>
+                            <p class="humidity">50%</p>
+                            <p>Humidity</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <img src="wind.png">
+                        <div>
+                            <p class="wind">15 km/h</p>
+                            <p>Wind Speed</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <img src="visibility-4-48.png">
+                        <div>
+                            <p class="visibility">2.5 km</p>
+                            <p>Visibility</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card" id="additional">
+            <div class="weather_additional">
+                <h2 class="additional">Additional Information...</h2>
+                <div class="row">
+                    <div>Country : </div>
+                    <div class="country"></div>
+                </div>
+                <div class="row">
+                    <div>Weather Description : </div>
+                    <div class="weather_description"></div>
+                </div>
+                <div class="row">
+                    <div>Feels Like : </div>
+                    <div class="feels_like"></div>
+                </div>
+                <div class="row">
+                    <div>Minimum Temperature : </div>
+                    <div class="temp_min"></div>
+                </div>
+                <div class="row">
+                    <div>Maximum Temperature : </div>
+                    <div class="temp_max"></div>
+                </div>
+                <div class="row">
+                    <div>Pressure : </div>
+                    <div class="pressure"></div>
+                </div>
+                <div class="row">
+                    <div>Wind Degree : </div>
+                    <div class="wind_deg"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="weather.js"></script>
+</body>
+
+</html>

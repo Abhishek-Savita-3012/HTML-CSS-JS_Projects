@@ -1,0 +1,420 @@
+@import url('https://fonts.cdnfonts.com/css/netflix-font');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Netflix Font', sans-serif;
+}
+
+.container {
+    background-image: url(bgnetflix.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 710px;
+}
+
+.container .head {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    padding: 30px;
+    padding-left: 150px;
+    padding-right: 100px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.container .head .right {
+    padding: 20px;
+}
+.container .head .right a{
+    text-decoration: none;
+    color:white;
+}
+.container .head .right button {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    width: 125px;
+    height: 32px;
+    border: 2px solid rgba(0, 0, 0, 0.7);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.container .head .right button select {
+    height: 32x;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+.container .head .right button.sign {
+    background-color: rgb(229, 9, 20);
+    color: white;
+    margin-left: 20px;
+    height: 32px;
+    border: 2px solid rgb(229, 9, 20);
+    border-radius: 5px;
+    width: 76px;
+    cursor: pointer;
+}
+
+.container .head .right button.sign:hover {
+    background-color: rgb(190, 18, 27);
+    border: 2px solid rgb(190, 18, 27);
+}
+
+.hero {
+    height: 630px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.hero span {
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.hero span1 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.hero .btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero .btn input[type=email] {
+    height: 56px;
+    width: 368.75px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: grey;
+    border: 1px solid grey;
+    border-radius: 5px;
+    color: white;
+    margin-right: 20px;
+    padding-left: 20px;
+    cursor: pointer;
+}
+
+.hero .btn button {
+    height: 56px;
+    width: 209.25px;
+    background-color: rgb(229, 9, 20);
+    border: 1px solid rgb(229, 9, 20);
+    border-radius: 5px;
+    color: white;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.hero .btn button:hover {
+    background-color: rgb(190, 18, 27);
+    border: 1px solid rgb(190, 18, 27);
+}
+
+hr {
+    height: 6px;
+    background-color: rgba(52, 45, 45);
+    border: 1px solid rgba(52, 45, 45);
+}
+
+.container1 {
+    height: 500px;
+    width: 100%;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container1 .row {
+    display: flex;
+    flex-direction: row;
+}
+
+.container1 .row .col {
+    position: relative;
+    top: 100px;
+    margin-right: 100px;
+}
+
+.container1 .row .col span {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.container1 .row .col span1 {
+    font-size: 20px;
+}
+
+.container2 {
+    height: 500px;
+    width: 100%;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container2 .row {
+    display: flex;
+    flex-direction: row;
+}
+
+.container2 .row .col1 {
+    position: relative;
+    top: 100px;
+    margin-right: 100px;
+}
+
+.container2 .row .col1 span {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.container2 .row .col1 span1 {
+    font-size: 20px;
+}
+
+.container3 {
+    height: 500px;
+    width: 100%;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container3 .row {
+    display: flex;
+    flex-direction: row;
+}
+
+.container3 .row .col {
+    position: relative;
+    top: 100px;
+    margin-right: 100px;
+}
+
+.container3 .row .col span {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.container3 .row .col span1 {
+    font-size: 20px;
+}
+
+.container4 {
+    height: 500px;
+    width: 100%;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container4 .row {
+    display: flex;
+    flex-direction: row;
+}
+
+.container4 .row .col1 {
+    position: relative;
+    top: 100px;
+    margin-right: 100px;
+}
+
+.container4 .row .col1 span {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.container4 .row .col1 span1 {
+    font-size: 20px;
+}
+
+.faq{
+    padding:10px 12%;
+    text-align: center;
+    font-size:18px;
+    color:white;
+    background-color: black;
+    height:1000px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.faq h2{
+    font-size: 50px;
+    font-weight: 700;
+}
+.accordian{
+    margin:60px auto;
+    width:100%;
+    max-width:750px;
+}
+.accordian li{
+    list-style: none;
+    width:100%;
+    padding:5px;
+}
+.accordian li label:hover{
+    background-color: rgb(85, 85, 85);
+}
+.accordian li label{
+    display: flex;
+    align-items: center;
+    padding:20px;
+    font-size:18px;
+    font-weight: 500;
+    background: #303030;
+    margin-bottom: 2px;
+    cursor: pointer;
+    position: relative;
+    width:900px;
+    right:100px;
+}
+label::after{
+    content:'+';
+    font-size: 34px;
+    position: absolute;
+    right:20px;
+    transition: transform 0.5s;
+}
+input[type="radio"]{
+    display: none;
+}
+.accordian .content{
+    background: #303030;
+    text-align: left;
+    padding:0 20px;
+    max-height: 0;
+    overflow: hidden;
+    width:900px;
+    position: relative;
+    right:100px;
+}
+.accordian input[type="radio"]:checked + label + .content{
+    max-height: 600px;
+    padding:30px 20px;
+}
+.accordian input[type="radio"]:checked + label::after{
+    transform: rotate(135deg);
+}
+.factend .btn input[type=email] {
+    height: 56px;
+    width: 368.75px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: grey;
+    border: 1px solid grey;
+    border-radius: 5px;
+    color: white;
+    margin-right: 20px;
+    padding-left: 20px;
+    cursor: pointer;
+}
+
+.factend .btn button {
+    height: 57.6px;
+    width: 209.25px;
+    background-color: rgb(229, 9, 20);
+    border: 1px solid rgb(229, 9, 20);
+    border-radius: 5px;
+    color: white;
+    font-size: 25px;
+    cursor: pointer;
+    position: relative;
+    top: 5px;
+}
+
+.factend .btn button:hover {
+    background-color: rgb(190, 18, 27);
+    border: 1px solid rgb(190, 18, 27);
+}
+
+.end {
+    height: 400px;
+    width: 100%;
+    background-color: black;
+    color: grey;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.end .footer {
+    display: flex;
+    flex-direction: row;
+}
+
+.end .footer .footersection ul li {
+    list-style: none;
+    margin-top: 20px;
+}
+
+.end .footer .footersection {
+    margin: 90px;
+}
+
+.end .footer .footersection ul li a {
+    color: grey;
+}
+
+.end .top {
+    position: relative;
+    right: 485px;
+    top: 90px;
+}
+
+.end .footer {
+    position: relative;
+    right: 80px;
+    /* bottom:80px; */
+}
+
+.end .last {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    right: 550px;
+    bottom: 50px;
+}
+
+.end .last button {
+    background-color: rgba(52, 45, 45, 0);
+    color: white;
+    width: 125px;
+    height: 32px;
+    border: 2px solid grey;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.end .last button select {
+    height: 32x;
+    background-color: rgba(52, 45, 45, 0);
+    color: white;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    letter-spacing: 2px;
+    cursor: pointer;
+}

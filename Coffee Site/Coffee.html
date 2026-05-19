@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Coffee Website</title>
+    <link rel="stylesheet" href="Coffee.css">
+</head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+    href="https://fonts.googleapis.com/css2?family=Martian+Mono:wght@500&family=Montserrat:wght@500&family=Rubik+Doodle+Triangles&family=Titillium+Web&display=swap"
+    rel="stylesheet">
+
+<body>
+    <header class="header">
+        <div class="left">
+            <i class="fa-solid fa-mug-hot" style="color: #000000;"></i>&nbsp;&nbsp;Coffee
+        </div>
+        <div class="middle">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Menu</a></li>
+                <li><a href="">Review</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <i class="fa-sharp fa-solid fa-phone" style="color: #000000;"></i>&nbsp;&nbsp;0020-0303-2030
+        </div>
+    </header>
+    <div class="slider-container">
+        <div class="slider">
+            <div class="slide">
+                <img src="homeImg1.jpg" alt="Image 1">
+                <div class="text-overlay">We really like what we do<br>
+                    <span>Coffee Beans with a<br>Perfect Aroma</span>
+                    <br><br>
+                    <button>Explore</button>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="homeImg2.jpg" alt="Image 2">
+                <div class="text-overlay">Enjoy the finest coffee drinks<br>
+                    <span>Enjoy our exclusive<br> Coffee and Cocktails</span>
+                    <br><br>
+                    <button>Explore</button>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="homeImg3.jpg" alt="Image 3">
+                <div class="text-overlay">Making our coffee with love<br>
+                    <span>Alluring and Fragrant<br>Coffee Aroma</span>
+                    <br><br>
+                    <button>Explore</button>
+                </div>
+            </div>
+        </div>
+        <button class="prev" onclick="prevSlide()">❮</button>
+        <button class="next" onclick="nextSlide()">❯</button>
+    </div>
+    <div class="shop">
+        <div class="leftcol">
+            <div class="textbox">
+                <div class="heart"><i class="fa-regular fa-heart" style="color: #ffffff;"></i></div>
+                I really love the Cappucino. The coffee<br> was very smooth.
+            </div>
+        </div>
+        <div class="col">
+            <i><span>Our coffee Shop</span></i><br><br>
+            <span1>We Combine Classics<br>
+                and Modernity</span1><br><br>
+            We appreciate your trust greatly. Our clients choose<br> us and our products because they know we are
+            the<br>
+            best.
+            <br><br>
+            <span2>Cappucino</span2> . Late . Arabica
+            <br><br>
+            <button>About Us</button>
+            <button1>See More <i class="fa-solid fa-arrow-right" style="color: #000000;"></i></button1>
+        </div>
+    </div>
+    <div class="menu">
+        <div class="details">
+            <i><span>Our Menu</span></i> <br><br>
+            <span1>Our Popular Menu</span1> <br><br>
+            Our place designed by pro architecture with psychologist to build best place suit<br> you. Our place
+            designed by
+            pro architecture with psychologist to build best place<br> suit you.
+        </div>
+        <div class="row">
+            <div class="leftside">
+                <div class="item1">
+                    <div class="left" id="item1">
+
+                    </div>
+                    <div class="middle">
+                        <spanmenu>Americano Roasted Coffee</spanmenu><br>
+                        It is a long established fact that a reader will be distracted by the readable.
+                    </div>
+                    <div class="right">
+                        $18.99<br>
+                        <s>$20.66</s>
+                    </div>
+                </div>
+                <div class="item1">
+                    <div class="left" id="item2">
+
+                    </div>
+                    <div class="middle">
+                        <spanmenu>Americano Roasted Coffee</spanmenu><br>
+                        It is a long established fact that a reader will be distracted by the readable.
+                    </div>
+                    <div class="right">
+                        $18.99<br>
+                        <s>$20.66</s>
+                    </div>
+                </div>
+                <div class="item1">
+                    <div class="left" id="item3">
+
+                    </div>
+                    <div class="middle">
+                        <spanmenu>Americano Roasted Coffee</spanmenu><br>
+                        It is a long established fact that a reader will be distracted by the readable.
+                    </div>
+                    <div class="right">
+                        $18.99<br>
+                        <s>$20.66</s>
+                    </div>
+                </div>
+                <div class="item1">
+                    <div class="left" id="item4">
+
+                    </div>
+                    <div class="middle">
+                        <spanmenu>Americano Roasted Coffee</spanmenu><br>
+                        It is a long established fact that a reader will be distracted by the readable.
+                    </div>
+                    <div class="right">
+                        $18.99<br>
+                        <s>$20.66</s>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="schedule">
+                    <div class="time">
+                        Categories Time
+                    </div>
+                    <div class="day">
+                        <div class="dayname">
+                            Sunday
+                        </div>
+                        <div class="status">
+                            Closed
+                        </div>
+                    </div>
+                    <div class="day">
+                        <div class="dayname">
+                            Monday
+                        </div>
+                        <div class="status">
+                            7.00am - 3.00pm
+                        </div>
+                    </div>
+                    <div class="day">
+                        <div class="dayname">
+                            Tuesday
+                        </div>
+                        <div class="status">
+                            7.00am - 3.00pm
+                        </div>
+                    </div>
+                    <div class="day">
+                        <div class="dayname">
+                            Wednesday
+                        </div>
+                        <div class="status">
+                            7.00am - 3.00pm
+                        </div>
+                    </div>
+                    <div class="day">
+                        <div class="dayname">
+                            Thursday
+                        </div>
+                        <div class="status">
+                            7.00am - 3.00pm
+                        </div>
+                    </div>
+                    <div class="day">
+                        <div class="dayname">
+                            Friday
+                        </div>
+                        <div class="status">
+                            7.00am - 3.00pm
+                        </div>
+                    </div>
+                    <div class="day">
+                        <div class="dayname">
+                            Saturday
+                        </div>
+                        <div class="status">
+                            7.00am - 3.00pm
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="brands">
+        <i><span>Our Trusted Brands</span></i>
+        <div class="rowbr">
+            <div class="colbr" id="brand1">
+
+            </div>
+            <div class="colbr" id="brand2">
+
+            </div>
+            <div class="colbr" id="brand3">
+
+            </div>
+            <div class="colbr" id="brand4">
+
+            </div>
+            <div class="colbr" id="brand5">
+
+            </div>
+        </div>
+    </div>
+    <div class="review">
+        <i><span>Reviews</span></i>
+        <br><br>
+        <span3>What Clients Says</span3>
+        <br><br>
+        Some reviews that customer said about coffee services and business Lorem<br> ipsum dolor sit amet consectetur
+        adipisicing elit. Sunt magnam totam repellat,<br> labore commodi exercitationem!<br><br>
+        <div class="img">
+
+        </div>
+        <br><br>
+        Your coffee hits the spot every time. Thank you for the experience of pure, delicious<br> coffee masterfully
+        roasted! I will never purchase any other and I will spread the<br> word!
+        <br><br>
+        <span1><i class="fa-solid fa-quote-left" style="color:rgb(193, 113, 56);"></i></span1>
+        <br>
+        <span2>Marnie Rotter</span2>
+        App Developer
+    </div>
+    <div class="account">
+        <span><i class="fa-solid fa-mug-hot" style="color:grey;"></i>&nbsp;&nbsp;Coffee</span>
+        <br><br>
+        This is the perfect place to find a nice and cozy spot to sip some. You'll find the<br> Java Jungle, Coffee Bean
+        and
+        more shops right in this website.
+        <br><br><br><br>
+        <div class="btn">
+            <input type="email" placeholder="email@coffee.com">
+            <span1>Subscribe</span1>
+        </div>
+        <ul>
+            <li><i class="fa-brands fa-facebook"></i></li>
+            <li><i class="fa-brands fa-twitter"></i></li>
+            <li><i class="fa-brands fa-instagram"></i></li>
+            <li><i class="fa-brands fa-github"></i></li>
+            <li><i class="fa-brands fa-youtube"></i></li>
+        </ul>
+    </div>
+    <footer class="footer">
+        <div class="information">
+            <div class="column" id="first">
+                <span><i class="fa-solid fa-mug-hot" style="color:grey;"></i>&nbsp;&nbsp;Coffee</span>
+                <br><br>
+                Coffee is a cafe that serve many variant of coffee and other dishes with very comfortable place.
+                <br><br><br>
+                <i class="fa-solid fa-location-dot"></i>&nbsp;USA Californa 65 South Fifth
+                &nbsp;&nbsp;&nbsp;&nbsp;St.Sicklerville, NJ 08081
+            </div>
+            <div class="col">
+                <ul>
+                    <li>
+                        <span1>Facility</span1>
+                    </li>
+                    <li>Private Room</li>
+                    <li>Meeting Room</li>
+                    <li>Event Room</li>
+                    <li>Creative Studio</li>
+                    <li>Custom Room</li>
+                </ul>
+            </div>
+            <div class="col">
+                <ul>
+                    <li>
+                        <span1>Facility</span1>
+                    </li>
+                    <li>Coffee</li>
+                    <li>Beverages</li>
+                    <li>Dishes</li>
+                </ul>
+            </div>
+            <div class="col">
+                <ul>
+                    <li>
+                        <span1>Support</span1>
+                    </li>
+                    <li>About Us</li>
+                    <li>FAQs</li>
+                    <li>Private Policy</li>
+                    <li>Help Us</li>
+                </ul>
+            </div>
+        </div>
+        <div class="hr">
+
+        </div>
+        <div class="end">
+            © CodingLab. All rigths reserved
+        </div>
+    </footer>
+
+    <script src="Coffee.js"></script>
+</body>
+
+</html>
